@@ -10,7 +10,7 @@ make install
 
 Single usege of cron job:
 
-```c++
+```cpp
 cron::cronjob single_cron(
 	cron::CronTime(0, 0, 1),
 	[](void) {
@@ -26,7 +26,7 @@ CronTime struct overview: `CronTime(hour, minute, second)`. The `wait` function 
 
 Usege of cron jobs scheduler:
 
-```c++
+```cpp
 cron::schedule::schedule sch;
 
 sch.add(

@@ -1,0 +1,17 @@
+{
+	"name": "node",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"start": "node main.js",
+		"conf": "node-gyp configure",
+		"build": "node-gyp build"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"node-addon-api": "^6.1.0"
+	}
+}

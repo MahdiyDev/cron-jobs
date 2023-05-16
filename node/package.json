@@ -6,7 +6,8 @@
 	"scripts": {
 		"start": "node main.js",
 		"conf": "node-gyp configure",
-		"build": "node-gyp build"
+		"build": "node-gyp build",
+		"rebuild": "rm -rf build && npm run conf && npm run build"
 	},
 	"keywords": [],
 	"author": "",

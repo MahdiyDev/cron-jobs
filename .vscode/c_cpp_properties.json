@@ -6,7 +6,7 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/src/include",
                 "C:\\Users\\Mahdiy\\AppData\\Local\\node-gyp\\Cache\\18.14.0\\include\\node",
-                "D:\\code\\c++\\cron-jobs-master\\src\\node\\node_modules\\node-addon-api"
+                "D:\\code\\c++\\cron-jobs-master\\node\\node_modules\\node-addon-api"
             ],
             "defines": [
                 "_DEBUG",

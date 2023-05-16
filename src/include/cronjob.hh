@@ -7,6 +7,8 @@
 #include <string>
 #include <thread>
 
+#include "CronTime.hh"
+
 namespace Cron {
 typedef std::function<void(void)> PassFunction;
 
@@ -19,6 +21,8 @@ private:
      */
     void add_cron(PassFunction function, CronTime time);
 
+    std::thread& get_thread();
+
 public:
     Cronjob();
     /**
@@ -29,7 +33,6 @@ public:
      */
     Cronjob(CronTime time, PassFunction function);
 
-    std::thread& get_thread();
     /**
      * waiting for execude successfuly.
      */

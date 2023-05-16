@@ -1,13 +1,13 @@
 {
 	"targets": [
 		{
-			"target_name": "node",
+			"target_name": "Cronjob",
 			"cflags!": ["-fno-exceptions"],
 			"cflags_cc!": ["-fno-exceptions"],
 			"cflags": ["-Wall", "-Wno-psabi", "-std=c++14", "-pthread"],
 			"cflags_cc": ["-Wall", "-Wno-psabi", "-pthread"],
-			"sources": ["node.cc"],
-			"include_dirs": ["<!(node -p \"require('node-addon-api').include_dir\")"],
+			"sources": ["src/Cronjob.cc"],
+			"include_dirs": ["<!(node -p \"require('node-addon-api').include_dir\")", "../src/"],
 			"dependencies": ["<!(node -p \"require('node-addon-api').gyp\")"],
 			"defines": ["NAPI_CPP_EXCEPTIONS"],
 			'conditions': [

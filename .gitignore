@@ -1,4 +1,4 @@
 main.o
 main.exe
-src/node/node_modules
-src/node/build
+node/node_modules
+node/build

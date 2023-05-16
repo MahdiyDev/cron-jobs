@@ -19,7 +19,7 @@ public:
 
     int GetWeaks();
     int GetDays();
-    int GetHour();
+    int GetHours();
     int GetMinutes();
     int GetSeconds();
 };
@@ -64,7 +64,7 @@ int CronTime::GetDays()
     return (weaks * 7) + days + (hours / 24) + (mins / 60) + (secs / (60 * 60));
 }
 
-int CronTime::GetHour()
+int CronTime::GetHours()
 {
     return (weaks * 7 * 24) + (days * 24) + hours + (mins / 60) + (secs / (60 * 60));
 }
